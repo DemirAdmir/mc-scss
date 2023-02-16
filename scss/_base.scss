@@ -31,8 +31,6 @@ img {
   max-width: 100%;
 }
 
-
-
 h1 {
   color: $primary;
   margin-bottom: $base-margin;
@@ -69,4 +67,8 @@ button {
   padding: $base-padding;
   border-radius: $base-border-radius;
   border-width: $base-border-thickness;
+}
+
+.test {
+  color: $primary;
 }
