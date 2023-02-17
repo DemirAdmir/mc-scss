@@ -4,7 +4,30 @@ $secondary: #1ac888;
 $error: #d32752;
 $info: #f6c31c;
 
-// Spacing
+// color pallet
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "error": $error,
+    "info": $info,
+    "blue": #1919e6,
+);
+
+.test-btn {
+    background-color: map-get($colors, "blue");
+}
+
+// @debug map-get($colors, "blue");
+// @debug map-has-key($colors, "secondary");
+// @debug map-remove($colors, "primary");
+// @debug map-merge(
+//     $colors,
+//     (
+//         "pink": #ffc0cb,
+//     )
+// );
+
+// spacing
 $base-padding: 0.75rem;
 $base-margin: 0.75rem;
 
